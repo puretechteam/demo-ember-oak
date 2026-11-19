@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=localStorage.getItem('emberoak:theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}</script>
+<title>Ember &amp; Oak | Wood-fired kitchen and wine bar, Portland</title>
+<meta name="description" content="Ember &amp; Oak cooks everything over a twelve-foot oak hearth on Cinder Lane in Portland. Wood-fired plates, 140 bottles of wine, private dining for 24. Open Tuesday to Sunday.">
+<link rel="canonical" href="https://puretechteam.github.io/demo-ember-oak/">
+<meta name="theme-color" content="#120e0b" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4ecdf" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ember &amp; Oak">
+<meta property="og:title" content="Ember &amp; Oak | Wood-fired kitchen and wine bar">
+<meta property="og:description" content="Every plate meets the fire. Wood-fired cooking, a long wine list and a room that smells like oak smoke. Cinder Lane, Portland.">
+<meta property="og:url" content="https://puretechteam.github.io/demo-ember-oak/">
+<meta property="og:image" content="https://puretechteam.github.io/demo-ember-oak/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ember &amp; Oak wordmark over glowing embers">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ember &amp; Oak | Wood-fired kitchen and wine bar">
+<meta name="twitter:description" content="Every plate meets the fire. Wood-fired cooking and a long wine list on Cinder Lane, Portland.">
+<meta name="twitter:image" content="https://puretechteam.github.io/demo-ember-oak/og.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&amp;family=Instrument+Sans:wght@400..600&amp;display=swap"></noscript>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="module" src="js/site.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Ember & Oak",
+  "description": "Wood-fired kitchen and wine bar. Everything is cooked over a twelve-foot oak hearth.",
+  "url": "https://puretechteam.github.io/demo-ember-oak/",
+  "image": "https://puretechteam.github.io/demo-ember-oak/og.png",
+  "telephone": "+1-503-555-0142",
+  "email": "hello@emberandoak.example",
+  "priceRange": "$$$",
+  "servesCuisine": ["Wood-fired", "Pacific Northwest", "Wine bar"],
+  "acceptsReservations": "True",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "418 Cinder Lane",
+    "addressLocality": "Portland",
+    "addressRegion": "OR",
+    "postalCode": "97214",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday"], "opens": "17:00", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "17:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "16:00", "closes": "21:00" }
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "name": "Dinner",
+    "hasMenuSection": [
+      { "@type": "MenuSection", "name": "Small plates", "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Ember-roasted beets", "offers": { "@type": "Offer", "price": "14", "priceCurrency": "USD" }, "suitableForDiet": ["https://schema.org/VegetarianDiet", "https://schema.org/GlutenFreeDiet"] },
+        { "@type": "MenuItem", "name": "Blistered padrón peppers", "offers": { "@type": "Offer", "price": "11", "priceCurrency": "USD" }, "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"] },
+        { "@type": "MenuItem", "name": "Hearth flatbread", "offers": { "@type": "Offer", "price": "9", "priceCurrency": "USD" }, "suitableForDiet": "https://schema.org/VegetarianDiet" },
+        { "@type": "MenuItem", "name": "Oak-smoked trout rillettes", "offers": { "@type": "Offer", "price": "16", "priceCurrency": "USD" } },
+        { "@type": "MenuItem", "name": "Clams in the coals", "offers": { "@type": "Offer", "price": "19", "priceCurrency": "USD" } }
+      ] },
+      { "@type": "MenuSection", "name": "From the fire", "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Dry-aged ribeye, 14 oz", "offers": { "@type": "Offer", "price": "54", "priceCurrency": "USD" }, "suitableForDiet": "https://schema.org/GlutenFreeDiet" },
+        { "@type": "MenuItem", "name": "Brick-pressed half chicken", "offers": { "@type": "Offer", "price": "32", "priceCurrency": "USD" }, "suitableForDiet": "https://schema.org/GlutenFreeDiet" },
+        { "@type": "MenuItem", "name": "Whole branzino", "offers": { "@type": "Offer", "price": "38", "priceCurrency": "USD" }, "suitableForDiet": "https://schema.org/GlutenFreeDiet" },
+        { "@type": "MenuItem", "name": "Coal-roasted cauliflower", "offers": { "@type": "Offer", "price": "26", "priceCurrency": "USD" }, "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"] },
+        { "@type": "MenuItem", "name": "Twelve-hour pork shoulder", "offers": { "@type": "Offer", "price": "34", "priceCurrency": "USD" }, "suitableForDiet": "https://schema.org/GlutenFreeDiet" }
+      ] },
+      { "@type": "MenuSection", "name": "Sides", "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Ash-baked potatoes", "offers": { "@type": "Offer", "price": "10", "priceCurrency": "USD" }, "suitableForDiet": ["https://schema.org/VegetarianDiet", "https://schema.org/GlutenFreeDiet"] },
+        { "@type": "MenuItem", "name": "Charred green beans", "offers": { "@type": "Offer", "price": "9", "priceCurrency": "USD" }, "suitableForDiet": ["https://schema.org/VeganDiet", "https://schema.org/GlutenFreeDiet"] },
+        { "@type": "MenuItem", "name": "Wood-fired mushrooms", "offers": { "@type": "Offer", "price": "12", "priceCurrency": "USD" }, "suitableForDiet": "https://schema.org/VegetarianDiet" }
+      ] },
+      { "@type": "MenuSection", "name": "Desserts", "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Burnt Basque cheesecake", "offers": { "@type": "Offer", "price": "12", "priceCurrency": "USD" }, "suitableForDiet": ["https://schema.org/VegetarianDiet", "https://schema.org/GlutenFreeDiet"] },
+        { "@type": "MenuItem", "name": "Smoked chocolate pot", "offers": { "@type": "Offer", "price": "11", "priceCurrency": "USD" }, "suitableForDiet": "https://schema.org/VeganDiet" },
+        { "@type": "MenuItem", "name": "Grilled peaches", "offers": { "@type": "Offer", "price": "11", "priceCurrency": "USD" }, "suitableForDiet": "https://schema.org/VegetarianDiet" }
+      ] }
+    ]
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Shared art: gallery tiles and the lightbox both draw from these symbols -->
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="g-hearth-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#24150e"/><stop offset="1" stop-color="#0b0604"/></linearGradient>
+    <linearGradient id="g-brick" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a3a22"/><stop offset="1" stop-color="#3f1d11"/></linearGradient>
+    <radialGradient id="g-glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff8a3d" stop-opacity=".95"/><stop offset=".45" stop-color="#e2551a" stop-opacity=".45"/><stop offset="1" stop-color="#e2551a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="g-flame" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff4d12"/><stop offset=".55" stop-color="#ff8f2e"/><stop offset="1" stop-color="#ffc56b" stop-opacity=".2"/></linearGradient>
+    <linearGradient id="g-flame-core" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff6dc"/><stop offset=".6" stop-color="#ffd27a"/><stop offset="1" stop-color="#ffb347" stop-opacity=".3"/></linearGradient>
+    <path id="flame" d="M200 455C150 455 130 410 150 360c10-25 25-40 22-75 23 20 33 45 28 70 15-15 22-35 20-55 35 40 45 95 25 130-10 18-25 25-45 25z"/>
+    <path id="flame-core" d="M200 455c-25 0-35-25-25-50 7-17 17-25 17-45 13 15 23 32 22 50 8-8 12-16 12-24 14 24 12 54-1 64-7 4-15 5-25 5z"/>
+
+    <linearGradient id="g-board" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#76492a"/><stop offset="1" stop-color="#3f2414"/></linearGradient>
+    <radialGradient id="g-meat" cx="45%" cy="45%" r="60%"><stop offset="0" stop-color="#b8432f"/><stop offset=".6" stop-color="#7d2418"/><stop offset="1" stop-color="#3c120b"/></radialGradient>
+    <clipPath id="clip-steak"><path d="M120 190C150 150 250 145 290 185c35 35 30 115-5 150-35 35-115 40-150 5-35-35-40-115-15-150z"/></clipPath>
+
+    <radialGradient id="g-plum" cx="55%" cy="35%" r="80%"><stop offset="0" stop-color="#5a1830"/><stop offset=".6" stop-color="#2a0a16"/><stop offset="1" stop-color="#120509"/></radialGradient>
+    <radialGradient id="g-bokeh" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffb46a" stop-opacity=".55"/><stop offset="1" stop-color="#ffb46a" stop-opacity="0"/></radialGradient>
+    <linearGradient id="g-wine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a51d3c"/><stop offset="1" stop-color="#3d0716"/></linearGradient>
+    <clipPath id="clip-bowl"><path d="M138 112c-6 70-4 140 26 168 12 11 24 16 36 16s24-5 36-16c30-28 32-98 26-168z"/></clipPath>
+
+    <linearGradient id="g-terracotta" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c76a37"/><stop offset="1" stop-color="#7c3216"/></linearGradient>
+    <radialGradient id="g-plate" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#fbf5ea"/><stop offset="1" stop-color="#ddd0bd"/></radialGradient>
+    <radialGradient id="g-beet" cx="35%" cy="35%" r="70%"><stop offset="0" stop-color="#d42d73"/><stop offset=".7" stop-color="#7a0f3d"/><stop offset="1" stop-color="#4a0723"/></radialGradient>
+    <radialGradient id="g-golden" cx="35%" cy="35%" r="70%"><stop offset="0" stop-color="#ffd06a"/><stop offset="1" stop-color="#c47414"/></radialGradient>
+
+    <radialGradient id="g-coal" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#ffe0a3"/><stop offset=".3" stop-color="#ff8a2a"/><stop offset=".65" stop-color="#a8320b"/><stop offset="1" stop-color="#2a0d05"/></radialGradient>
+    <radialGradient id="g-coal-dim" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#ff7a2a"/><stop offset=".5" stop-color="#7a220a"/><stop offset="1" stop-color="#1c0904"/></radialGradient>
+    <linearGradient id="g-shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#080403" stop-opacity=".95"/><stop offset=".45" stop-color="#080403" stop-opacity="0"/></linearGradient>
+
+    <linearGradient id="g-night" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151522"/><stop offset="1" stop-color="#07070b"/></linearGradient>
+    <radialGradient id="g-candle" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffc77a" stop-opacity=".75"/><stop offset=".4" stop-color="#ff8a3d" stop-opacity=".22"/><stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="g-wax" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9c8ad"/><stop offset=".5" stop-color="#fff4e2"/><stop offset="1" stop-color="#bfa98a"/></linearGradient>
+  </defs>
+
+  <symbol id="art-hearth" viewBox="0 0 400 500">
+    <rect width="400" height="500" fill="url(#g-hearth-bg)"/>
+    <path d="M0 70h400M0 140h400M0 210h400M0 280h400M0 350h400M0 420h400" stroke="#000" stroke-opacity=".35" stroke-width="3"/>
+    <path d="M60 0v70M180 0v70M300 0v70M120 70v70M240 70v70M360 70v70M30 140v70M370 140v70M10 210v70M390 210v70" stroke="#000" stroke-opacity=".3" stroke-width="3"/>
+    <path d="M70 500V270a130 130 0 0 1 260 0v230z" fill="#060302"/>
+    <ellipse cx="200" cy="470" rx="190" ry="190" fill="url(#g-glow)"/>
+    <use href="#flame" fill="url(#g-flame)"/>
+    <use href="#flame" fill="url(#g-flame)" transform="translate(15 162) scale(.65)" opacity=".85"/>
+    <use href="#flame" fill="url(#g-flame)" transform="translate(122 140) scale(.7)" opacity=".9"/>
+    <use href="#flame-core" fill="url(#g-flame-core)"/>
+    <use href="#flame-core" fill="url(#g-flame-core)" transform="translate(24 175) scale(.62)" opacity=".8"/>
+    <rect x="92" y="450" width="216" height="26" rx="13" fill="#2b170d" transform="rotate(-6 200 463)"/>
+    <rect x="104" y="462" width="196" height="24" rx="12" fill="#3d2214" transform="rotate(7 200 474)"/>
+    <circle cx="301" cy="446" r="13" fill="#6a4026" stroke="#2b170d" stroke-width="4"/>
+    <circle cx="301" cy="446" r="5" fill="none" stroke="#2b170d" stroke-width="2"/>
+    <g fill="#ff9a3c"><circle cx="150" cy="490" r="6"/><circle cx="185" cy="494" r="5"/><circle cx="232" cy="491" r="7"/><circle cx="268" cy="495" r="5"/><circle cx="122" cy="496" r="4"/></g>
+    <path d="M70 500V270a130 130 0 0 1 260 0v230" fill="none" stroke="url(#g-brick)" stroke-width="32"/>
+    <path d="M70 500V270a130 130 0 0 1 260 0v230" fill="none" stroke="#120804" stroke-width="32" stroke-dasharray="3 25"/>
+    <g fill="#ffd38a"><circle cx="214" cy="200" r="2.5"/><circle cx="176" cy="160" r="2"/><circle cx="238" cy="128" r="1.6"/><circle cx="190" cy="236" r="1.8"/><circle cx="252" cy="208" r="1.4"/></g>
+  </symbol>
+
+  <symbol id="art-ribeye" viewBox="0 0 400 500">
+    <rect width="400" height="500" fill="#171210"/>
+    <circle cx="330" cy="70" r="160" fill="url(#g-glow)" opacity=".35"/>
+    <g transform="rotate(-10 200 260)">
+      <rect x="40" y="80" width="320" height="360" rx="28" fill="url(#g-board)"/>
+      <path d="M58 130c90-12 190 12 284-6M58 196c96-10 180 18 284 0M58 270c90-12 190 14 284-4M58 350c80-10 190 14 284 0M58 410c96-8 180 10 284-2" stroke="#2f1a0e" stroke-width="2" fill="none" opacity=".55"/>
+      <ellipse cx="208" cy="270" rx="118" ry="112" fill="#000" opacity=".35"/>
+      <path d="M120 190C150 150 250 145 290 185c35 35 30 115-5 150-35 35-115 40-150 5-35-35-40-115-15-150z" fill="url(#g-meat)"/>
+      <g clip-path="url(#clip-steak)">
+        <path d="M90 230l200-80M90 280l220-90M100 330l220-90M130 370l200-80" stroke="#1d0a05" stroke-width="11" stroke-linecap="round" opacity=".75"/>
+        <path d="M150 240c20 10 40 0 60 12M190 300c18-8 36 6 52-2M160 320c10 6 24 4 30 10" stroke="#f0b49c" stroke-width="2" fill="none" opacity=".4"/>
+      </g>
+      <path d="M128 182c34-36 120-40 158-2" stroke="#ecd3ae" stroke-width="15" fill="none" stroke-linecap="round"/>
+      <path d="M128 182c34-36 120-40 158-2" stroke="#b98b5f" stroke-width="3" fill="none" stroke-linecap="round" opacity=".6"/>
+      <g fill="#f6efe4"><rect x="168" y="214" width="5" height="4" rx="1" transform="rotate(20 170 216)"/><rect x="232" y="246" width="4" height="4" rx="1"/><rect x="200" y="300" width="5" height="3" rx="1" transform="rotate(-30 202 301)"/><rect x="250" y="210" width="4" height="3" rx="1"/><rect x="150" y="280" width="4" height="4" rx="1"/></g>
+      <path d="M110 400c50-20 110-30 170-28" stroke="#4d6b33" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <g stroke="#6a8c45" stroke-width="3" stroke-linecap="round"><path d="M130 392l-8-14M150 386l-6-15M170 381l-4-15M190 377l-3-15M210 375l-1-15M230 374l1-14M250 373l3-14M140 389l6 13M160 383l6 13M180 379l5 13M200 376l4 13M220 374l3 13M240 373l2 13"/></g>
+    </g>
+  </symbol>
+
+  <symbol id="art-pour" viewBox="0 0 400 500">
+    <rect width="400" height="500" fill="url(#g-plum)"/>
+    <circle cx="70" cy="110" r="60" fill="url(#g-bokeh)"/>
+    <circle cx="340" cy="190" r="80" fill="url(#g-bokeh)" opacity=".7"/>
+    <circle cx="300" cy="420" r="50" fill="url(#g-bokeh)" opacity=".6"/>
+    <circle cx="60" cy="380" r="40" fill="url(#g-bokeh)" opacity=".5"/>
+    <path d="M206 0c-2 70 0 150-4 236" stroke="#8e1834" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M207 0c-1 70 1 150-2 236" stroke="#e06a85" stroke-width="1.5" fill="none" opacity=".5"/>
+    <g clip-path="url(#clip-bowl)">
+      <rect x="120" y="226" width="160" height="90" fill="url(#g-wine)"/>
+      <ellipse cx="200" cy="228" rx="64" ry="7" fill="#c23a59"/>
+      <ellipse cx="204" cy="229" rx="12" ry="3" fill="#f39ab0" opacity=".7"/>
+    </g>
+    <path d="M138 112c-6 70-4 140 26 168 12 11 24 16 36 16s24-5 36-16c30-28 32-98 26-168" fill="#fff" fill-opacity=".04" stroke="#f6e1d5" stroke-opacity=".6" stroke-width="3"/>
+    <path d="M152 130c-4 50-2 100 18 128" stroke="#fff" stroke-opacity=".45" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M200 296v116" stroke="#f6e1d5" stroke-opacity=".6" stroke-width="5"/>
+    <ellipse cx="200" cy="414" rx="56" ry="10" fill="none" stroke="#f6e1d5" stroke-opacity=".6" stroke-width="3"/>
+    <ellipse cx="200" cy="440" rx="110" ry="12" fill="#000" opacity=".35"/>
+  </symbol>
+
+  <symbol id="art-beets" viewBox="0 0 400 500">
+    <rect width="400" height="500" fill="url(#g-terracotta)"/>
+    <path d="M0 120h400M0 300h400M0 470h400" stroke="#5e240e" stroke-opacity=".3" stroke-width="2"/>
+    <circle cx="214" cy="262" r="160" fill="#3a1408" opacity=".3"/>
+    <circle cx="200" cy="250" r="158" fill="url(#g-plate)"/>
+    <circle cx="200" cy="250" r="128" fill="none" stroke="#cdbda5" stroke-width="2" opacity=".6"/>
+    <path d="M118 232c20-40 90-62 150-38 40 16 52 56 22 86-30 30-110 40-150 14-26-18-30-42-22-62z" fill="#fffaf2"/>
+    <circle cx="166" cy="228" r="34" fill="url(#g-beet)"/>
+    <circle cx="236" cy="216" r="26" fill="url(#g-golden)"/>
+    <circle cx="246" cy="282" r="30" fill="url(#g-beet)"/>
+    <circle cx="178" cy="300" r="22" fill="url(#g-golden)"/>
+    <path d="M150 200c30 20 70 6 100 30s40 60 10 70" stroke="#e39a2a" stroke-width="4" fill="none" stroke-linecap="round" opacity=".9"/>
+    <g fill="#8aa84a"><circle cx="210" cy="250" r="4"/><circle cx="196" cy="268" r="3"/><circle cx="268" cy="250" r="3.5"/><circle cx="150" cy="268" r="3"/><circle cx="222" cy="312" r="3.5"/><circle cx="140" cy="236" r="3"/></g>
+    <g fill="#4f7a2c"><path d="M276 196c10-12 26-12 32-4-10 10-24 10-32 4z"/><path d="M120 300c6-14 22-18 30-12-6 12-20 16-30 12z"/><path d="M226 334c12-8 26-4 30 4-12 6-24 4-30-4z"/></g>
+  </symbol>
+
+  <symbol id="art-coals" viewBox="0 0 400 500">
+    <rect width="400" height="500" fill="#0b0605"/>
+    <ellipse cx="200" cy="360" rx="260" ry="200" fill="url(#g-glow)" opacity=".55"/>
+    <g><ellipse cx="20" cy="20" rx="28" ry="25" transform="rotate(1 20 20)" fill="url(#g-coal)"/><ellipse cx="81" cy="20" rx="39" ry="23" transform="rotate(7 81 20)" fill="url(#g-coal-dim)"/><ellipse cx="133" cy="20" rx="29" ry="20" transform="rotate(8 133 20)" fill="url(#g-coal-dim)"/><ellipse cx="164" cy="20" rx="38" ry="22" transform="rotate(17 164 20)" fill="url(#g-coal-dim)"/><ellipse cx="216" cy="20" rx="34" ry="27" transform="rotate(8 216 20)" fill="url(#g-coal-dim)"/><ellipse cx="277" cy="20" rx="42" ry="27" transform="rotate(-5 277 20)" fill="url(#g-coal)"/><ellipse cx="333" cy="20" rx="31" ry="18" transform="rotate(-8 333 20)" fill="url(#g-coal)"/><ellipse cx="370" cy="20" rx="43" ry="23" transform="rotate(9 370 20)" fill="url(#g-coal-dim)"/><ellipse cx="48" cy="67" rx="34" ry="21" transform="rotate(-12 48 67)" fill="url(#g-coal-dim)"/><ellipse cx="93" cy="67" rx="31" ry="20" transform="rotate(7 93 67)" fill="url(#g-coal-dim)"/><ellipse cx="161" cy="67" rx="27" ry="21" transform="rotate(-9 161 67)" fill="url(#g-coal)"/><ellipse cx="216" cy="67" rx="31" ry="22" transform="rotate(5 216 67)" fill="url(#g-coal)"/><ellipse cx="285" cy="67" rx="33" ry="26" transform="rotate(5 285 67)" fill="url(#g-coal-dim)"/><ellipse cx="333" cy="67" rx="34" ry="24" transform="rotate(18 333 67)" fill="url(#g-coal)"/><ellipse cx="394" cy="67" rx="29" ry="23" transform="rotate(-6 394 67)" fill="url(#g-coal)"/><ellipse cx="34" cy="116" rx="26" ry="26" transform="rotate(-17 34 116)" fill="url(#g-coal)"/><ellipse cx="67" cy="116" rx="26" ry="28" transform="rotate(-11 67 116)" fill="url(#g-coal-dim)"/><ellipse cx="116" cy="116" rx="33" ry="23" transform="rotate(-14 116 116)" fill="url(#g-coal-dim)"/><ellipse cx="184" cy="116" rx="42" ry="27" transform="rotate(16 184 116)" fill="url(#g-coal-dim)"/><ellipse cx="220" cy="116" rx="24" ry="19" transform="rotate(-17 220 116)" fill="url(#g-coal)"/><ellipse cx="278" cy="116" rx="29" ry="25" transform="rotate(0 278 116)" fill="url(#g-coal-dim)"/><ellipse cx="319" cy="116" rx="42" ry="19" transform="rotate(-5 319 116)" fill="url(#g-coal-dim)"/><ellipse cx="366" cy="116" rx="34" ry="16" transform="rotate(17 366 116)" fill="url(#g-coal-dim)"/><ellipse cx="61" cy="167" rx="28" ry="28" transform="rotate(3 61 167)" fill="url(#g-coal-dim)"/><ellipse cx="112" cy="167" rx="28" ry="19" transform="rotate(3 112 167)" fill="url(#g-coal)"/><ellipse cx="191" cy="167" rx="38" ry="25" transform="rotate(0 191 167)" fill="url(#g-coal)"/><ellipse cx="242" cy="167" rx="42" ry="18" transform="rotate(8 242 167)" fill="url(#g-coal-dim)"/><ellipse cx="307" cy="167" rx="42" ry="26" transform="rotate(20 307 167)" fill="url(#g-coal-dim)"/><ellipse cx="391" cy="167" rx="32" ry="19" transform="rotate(9 391 167)" fill="url(#g-coal-dim)"/><ellipse cx="31" cy="208" rx="42" ry="23" transform="rotate(-6 31 208)" fill="url(#g-coal-dim)"/><ellipse cx="106" cy="208" rx="31" ry="25" transform="rotate(-3 106 208)" fill="url(#g-coal)"/><ellipse cx="162" cy="208" rx="44" ry="28" transform="rotate(5 162 208)" fill="url(#g-coal-dim)"/><ellipse cx="243" cy="208" rx="28" ry="24" transform="rotate(-15 243 208)" fill="url(#g-coal)"/><ellipse cx="301" cy="208" rx="39" ry="27" transform="rotate(-1 301 208)" fill="url(#g-coal)"/><ellipse cx="365" cy="208" rx="27" ry="24" transform="rotate(1 365 208)" fill="url(#g-coal)"/><ellipse cx="40" cy="255" rx="39" ry="16" transform="rotate(-8 40 255)" fill="url(#g-coal)"/><ellipse cx="86" cy="255" rx="38" ry="19" transform="rotate(-11 86 255)" fill="url(#g-coal-dim)"/><ellipse cx="141" cy="255" rx="26" ry="25" transform="rotate(13 141 255)" fill="url(#g-coal-dim)"/><ellipse cx="203" cy="255" rx="38" ry="28" transform="rotate(-19 203 255)" fill="url(#g-coal-dim)"/><ellipse cx="245" cy="255" rx="38" ry="27" transform="rotate(-19 245 255)" fill="url(#g-coal)"/><ellipse cx="283" cy="255" rx="26" ry="17" transform="rotate(-20 283 255)" fill="url(#g-coal-dim)"/><ellipse cx="354" cy="255" rx="28" ry="18" transform="rotate(-12 354 255)" fill="url(#g-coal-dim)"/><ellipse cx="387" cy="255" rx="33" ry="28" transform="rotate(-3 387 255)" fill="url(#g-coal-dim)"/><ellipse cx="27" cy="304" rx="25" ry="19" transform="rotate(12 27 304)" fill="url(#g-coal-dim)"/><ellipse cx="77" cy="304" rx="43" ry="22" transform="rotate(-15 77 304)" fill="url(#g-coal)"/><ellipse cx="145" cy="304" rx="27" ry="17" transform="rotate(-9 145 304)" fill="url(#g-coal-dim)"/><ellipse cx="201" cy="304" rx="34" ry="28" transform="rotate(-17 201 304)" fill="url(#g-coal)"/><ellipse cx="253" cy="304" rx="24" ry="16" transform="rotate(-3 253 304)" fill="url(#g-coal)"/><ellipse cx="308" cy="304" rx="42" ry="25" transform="rotate(11 308 304)" fill="url(#g-coal)"/><ellipse cx="380" cy="304" rx="43" ry="26" transform="rotate(6 380 304)" fill="url(#g-coal)"/><ellipse cx="46" cy="345" rx="34" ry="23" transform="rotate(9 46 345)" fill="url(#g-coal-dim)"/><ellipse cx="107" cy="345" rx="39" ry="27" transform="rotate(14 107 345)" fill="url(#g-coal-dim)"/><ellipse cx="159" cy="345" rx="34" ry="27" transform="rotate(19 159 345)" fill="url(#g-coal)"/><ellipse cx="208" cy="345" rx="31" ry="27" transform="rotate(8 208 345)" fill="url(#g-coal-dim)"/><ellipse cx="286" cy="345" rx="40" ry="18" transform="rotate(-10 286 345)" fill="url(#g-coal-dim)"/><ellipse cx="323" cy="345" rx="42" ry="26" transform="rotate(5 323 345)" fill="url(#g-coal-dim)"/><ellipse cx="390" cy="345" rx="33" ry="26" transform="rotate(3 390 345)" fill="url(#g-coal-dim)"/><ellipse cx="27" cy="391" rx="32" ry="18" transform="rotate(4 27 391)" fill="url(#g-coal)"/><ellipse cx="95" cy="391" rx="40" ry="20" transform="rotate(7 95 391)" fill="url(#g-coal-dim)"/><ellipse cx="134" cy="391" rx="30" ry="27" transform="rotate(-20 134 391)" fill="url(#g-coal)"/><ellipse cx="198" cy="391" rx="24" ry="24" transform="rotate(16 198 391)" fill="url(#g-coal)"/><ellipse cx="250" cy="391" rx="43" ry="24" transform="rotate(-13 250 391)" fill="url(#g-coal)"/><ellipse cx="317" cy="391" rx="24" ry="26" transform="rotate(4 317 391)" fill="url(#g-coal-dim)"/><ellipse cx="363" cy="391" rx="31" ry="25" transform="rotate(18 363 391)" fill="url(#g-coal)"/><ellipse cx="48" cy="440" rx="39" ry="23" transform="rotate(-16 48 440)" fill="url(#g-coal)"/><ellipse cx="96" cy="440" rx="28" ry="23" transform="rotate(-10 96 440)" fill="url(#g-coal)"/><ellipse cx="146" cy="440" rx="37" ry="26" transform="rotate(-10 146 440)" fill="url(#g-coal-dim)"/><ellipse cx="182" cy="440" rx="38" ry="21" transform="rotate(12 182 440)" fill="url(#g-coal)"/><ellipse cx="250" cy="440" rx="26" ry="27" transform="rotate(0 250 440)" fill="url(#g-coal-dim)"/><ellipse cx="291" cy="440" rx="41" ry="25" transform="rotate(9 291 440)" fill="url(#g-coal-dim)"/><ellipse cx="352" cy="440" rx="28" ry="25" transform="rotate(-14 352 440)" fill="url(#g-coal)"/><ellipse cx="404" cy="440" rx="43" ry="17" transform="rotate(-17 404 440)" fill="url(#g-coal)"/><ellipse cx="36" cy="489" rx="30" ry="18" transform="rotate(-19 36 489)" fill="url(#g-coal)"/><ellipse cx="76" cy="489" rx="27" ry="20" transform="rotate(-1 76 489)" fill="url(#g-coal)"/><ellipse cx="114" cy="489" rx="25" ry="17" transform="rotate(5 114 489)" fill="url(#g-coal)"/><ellipse cx="182" cy="489" rx="39" ry="22" transform="rotate(8 182 489)" fill="url(#g-coal)"/><ellipse cx="228" cy="489" rx="43" ry="25" transform="rotate(18 228 489)" fill="url(#g-coal)"/><ellipse cx="277" cy="489" rx="40" ry="18" transform="rotate(-17 277 489)" fill="url(#g-coal)"/><ellipse cx="329" cy="489" rx="33" ry="23" transform="rotate(-5 329 489)" fill="url(#g-coal)"/><ellipse cx="366" cy="489" rx="25" ry="17" transform="rotate(-6 366 489)" fill="url(#g-coal)"/></g>
+    <rect width="400" height="500" fill="url(#g-shade)"/>
+    <g fill="#ffd38a"><circle cx="120" cy="90" r="2"/><circle cx="260" cy="60" r="1.6"/><circle cx="300" cy="110" r="2.2"/><circle cx="180" cy="40" r="1.4"/></g>
+  </symbol>
+
+  <symbol id="art-candle" viewBox="0 0 400 500">
+    <rect width="400" height="500" fill="url(#g-night)"/>
+    <circle cx="200" cy="230" r="220" fill="url(#g-candle)"/>
+    <rect x="0" y="390" width="400" height="110" fill="#1a110c"/>
+    <path d="M0 390h400" stroke="#ffb46a" stroke-opacity=".3" stroke-width="2"/>
+    <ellipse cx="200" cy="400" rx="160" ry="10" fill="#ffb46a" opacity=".12"/>
+    <rect x="182" y="266" width="36" height="128" rx="5" fill="url(#g-wax)"/>
+    <path d="M182 272c6 8 10 2 14 10s8 0 12 6 6-2 10-4" stroke="#f4e3c6" stroke-width="3" fill="none"/>
+    <path d="M200 266v-12" stroke="#2a1a10" stroke-width="2.5"/>
+    <path d="M200 206c-11 16-14 32-10 42 2 6 6 9 10 9s8-3 10-9c4-10 1-26-10-42z" fill="#ffcc7a"/>
+    <path d="M200 226c-5 8-6 16-4 21 1 3 2 4 4 4s3-1 4-4c2-5 1-13-4-21z" fill="#fff6e0"/>
+    <g fill="none" stroke="#ffcf94" stroke-opacity=".75" stroke-width="2.5">
+      <path d="M70 232c-4 44 0 84 26 98s48 0 52-40c3-26 0-46-4-58z"/>
+      <path d="M108 328v58M84 392h48"/>
+      <path d="M262 214c-4 52 2 98 30 112s52-2 56-48c2-28 0-50-4-64z"/>
+      <path d="M304 326v60M280 392h48"/>
+    </g>
+    <path d="M74 290c8 26 28 38 50 34 18-4 24-20 24-34z" fill="#7e1530" opacity=".85"/>
+    <path d="M266 286c8 28 30 40 54 36 18-4 26-22 26-36z" fill="#d9b765" opacity=".55"/>
+  </symbol>
+</svg>
+
+<header class="site-header" data-header>
+  <div class="header-inner container">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false"><path d="M16 3.5c1.8 4.1 6.4 6.7 6.4 12.9a6.4 6.4 0 0 1-12.8 0c0-2.8 1.3-4.6 2.6-6 .2 2 1 3.4 2.4 4C13.8 10.2 14.3 6.6 16 3.5z" fill="currentColor"/><path d="M8 27h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <span class="brand-name">Ember <i>&amp;</i> Oak</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+        <span class="sr-only">Site navigation</span>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path class="l1" d="M4 8h16"/><path class="l2" d="M4 16h16"/></svg>
+      </button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#tasting">Tasting</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li class="nav-book"><a class="btn btn-accent" href="#reserve">Book a table</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <a class="btn btn-accent btn-sm header-book" href="#reserve">Book a table</a>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <section class="hero" id="top" aria-labelledby="hero-title" data-hero>
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner container">
+      <p class="eyebrow hero-eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Wood-fired kitchen &amp; wine bar, Portland</p>
+      <h1 class="hero-title" id="hero-title">Every plate <em>meets the fire.</em></h1>
+      <p class="hero-lede">One twelve-foot oak hearth. No gas burners. A menu that follows the coals from the first flatbread at five to the pork shoulder that went on at noon, and 140 bottles chosen to stand up to smoke.</p>
+      <div class="hero-cta">
+        <a class="btn btn-accent btn-lg" href="#reserve">Book a table</a>
+        <a class="btn btn-ghost btn-lg" href="#menu">See tonight's menu</a>
+      </div>
+    </div>
+    <div class="hero-facts container">
+      <div class="fact">
+        <span class="fact-label">Tonight</span>
+        <span class="status" data-open-status><span class="status-dot" aria-hidden="true"></span><span data-status-text>Tue to Sun from 5 pm</span></span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Find us</span>
+        <a href="#visit">418 Cinder Lane, Portland</a>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Call</span>
+        <a href="tel:+15035550142">(503)&nbsp;555&#8209;0142</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section story" id="story" aria-labelledby="story-title">
+    <div class="container story-grid">
+      <div class="story-copy">
+        <p class="eyebrow" data-reveal><span class="eyebrow-num">01</span>Our story</p>
+        <h2 class="section-title" id="story-title" data-reveal>We built the kitchen <em>around the fire.</em></h2>
+        <div class="story-text" data-reveal>
+          <p class="lead">Ember &amp; Oak opened in 2019 in an old blacksmith's shop on Cinder Lane. The forge is gone, but the chimney stayed, and so did the idea behind it: cook everything over wood and let the fire set the pace.</p>
+          <p>Chef Mateo Arana spent eight years on hearths in the Basque Country and the Bay Area before coming home to Oregon. His menu moves with the coals. It is hot and fast at five for flatbreads and clams, and low and slow by nine for the cuts that have been resting at the back of the grate all afternoon.</p>
+          <p>We burn Oregon white oak split at a family mill in Yamhill County, with cherry and apple prunings from nearby orchards when spring comes around.</p>
+        </div>
+        <figure class="chef-quote" data-reveal>
+          <blockquote>
+            <p>“Fire is the only cook in the room who never takes a night off. My job is to keep up.”</p>
+          </blockquote>
+          <figcaption>
+            <span class="chef-mono" aria-hidden="true">MA</span>
+            <span><strong>Mateo Arana</strong><span class="chef-role">Chef and co-owner</span></span>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="story-art" aria-hidden="true">
+        <svg class="sa-layer sa-back" viewBox="0 0 400 520" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="sa-glow" cx="50%" cy="60%" r="55%"><stop offset="0" stop-color="#ff7a2a" stop-opacity=".9"/><stop offset=".5" stop-color="#b8360c" stop-opacity=".35"/><stop offset="1" stop-color="#2a0c04" stop-opacity="0"/></radialGradient>
+          </defs>
+          <rect width="400" height="520" fill="#140c08"/>
+          <circle cx="200" cy="320" r="260" fill="url(#sa-glow)"/>
+        </svg>
+        <svg class="sa-layer sa-mid" viewBox="0 0 400 520" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="sa-wood" cx="48%" cy="46%" r="55%"><stop offset="0" stop-color="#e8c79a"/><stop offset=".7" stop-color="#c79a66"/><stop offset="1" stop-color="#8a5a32"/></radialGradient>
+            <radialGradient id="sa-char" cx="50%" cy="50%" r="50%"><stop offset=".82" stop-color="#2a1208" stop-opacity="0"/><stop offset=".9" stop-color="#ff7a2a"/><stop offset=".96" stop-color="#7a1f06"/><stop offset="1" stop-color="#1a0904"/></radialGradient>
+          </defs>
+          <circle cx="200" cy="290" r="150" fill="url(#sa-wood)"/>
+          <g fill="none" stroke="#8a5a32" stroke-opacity=".65" stroke-width="2">
+            <path d="M200 268c14-2 24 10 22 24s-16 22-28 18-18-16-14-28 10-14 20-14z"/>
+            <path d="M200 244c30-4 50 20 48 48s-30 46-56 42-40-30-34-56 20-32 42-34z"/>
+            <path d="M198 218c44-4 76 30 74 72s-44 72-82 66-62-44-56-82 26-54 64-56z"/>
+            <path d="M196 192c58-4 102 40 100 98s-58 98-110 92-86-58-80-110 36-76 90-80z"/>
+            <path d="M196 166c74-6 128 52 126 124s-74 124-140 116-110-74-102-140 46-96 116-100z"/>
+          </g>
+          <path d="M200 290l60-110M200 290l-90 70" stroke="#6a4024" stroke-width="2" stroke-opacity=".5"/>
+          <circle cx="200" cy="290" r="150" fill="url(#sa-char)"/>
+        </svg>
+        <svg class="sa-layer sa-front" viewBox="0 0 400 520" preserveAspectRatio="xMidYMid slice">
+          <g fill="#ffcf8a">
+            <circle cx="80" cy="120" r="3"/><circle cx="320" cy="90" r="2.4"/><circle cx="350" cy="220" r="3.4"/><circle cx="50" cy="300" r="2.2"/>
+            <circle cx="120" cy="60" r="1.8"/><circle cx="270" cy="40" r="2.6"/><circle cx="360" cy="400" r="2"/><circle cx="40" cy="450" r="2.8"/><circle cx="230" cy="110" r="1.6"/>
+          </g>
+          <g fill="#ff8a3d" opacity=".7">
+            <circle cx="150" cy="30" r="4"/><circle cx="300" cy="160" r="5"/><circle cx="70" cy="200" r="4.5"/><circle cx="340" cy="470" r="4"/>
+          </g>
+        </svg>
+        <p class="sa-caption">Oregon white oak, about three cords a month.</p>
+      </div>
+    </div>
+    <ul class="stats container">
+      <li data-reveal><span class="stat-num"><span data-count="12">12</span> ft</span><span class="stat-label">of open hearth</span></li>
+      <li data-reveal class="d1"><span class="stat-num" data-count="3">3</span><span class="stat-label">cords of oak a month</span></li>
+      <li data-reveal class="d2"><span class="stat-num" data-count="140">140</span><span class="stat-label">bottles on the list</span></li>
+      <li data-reveal class="d3"><span class="stat-num" data-count="0">0</span><span class="stat-label">gas burners in the kitchen</span></li>
+    </ul>
+  </section>
+
+  <section class="section menu" id="menu" aria-labelledby="menu-title" data-menu>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal><span class="eyebrow-num">02</span>The menu</p>
+        <h2 class="section-title" id="menu-title" data-reveal>Tonight, <em>from the hearth.</em></h2>
+        <p class="section-intro" data-reveal>The list changes with the season and with what the coals are doing. Plates are made to share. Tell your server about allergies and we will steer you right.</p>
+      </div>
+
+      <div class="menu-tools">
+        <div class="menu-search">
+          <label for="menu-search">Search the menu</label>
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input type="search" id="menu-search" name="q" placeholder="Try honey, clams, or chili" autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+        <div class="menu-filters">
+          <span class="filters-label" id="filters-label">Dietary</span>
+          <div class="chips" role="group" aria-labelledby="filters-label">
+            <button type="button" class="chip" data-filter="vegan" aria-pressed="false"><span class="chip-mark" aria-hidden="true">VG</span>Vegan</button>
+            <button type="button" class="chip" data-filter="vegetarian" aria-pressed="false"><span class="chip-mark" aria-hidden="true">V</span>Vegetarian</button>
+            <button type="button" class="chip" data-filter="gluten-free" aria-pressed="false"><span class="chip-mark" aria-hidden="true">GF</span>Gluten-free</button>
+            <button type="button" class="chip" data-filter="spicy" aria-pressed="false"><span class="chip-mark chip-mark-hot" aria-hidden="true">
+              <svg viewBox="0 0 16 16" width="12" height="12" focusable="false"><path d="M9.5 3.2c.6-.9 1.6-1.4 2.6-1.2-.6.4-1 1-1.1 1.7 1.7.9 2.2 3 1.5 5.2C11.4 12.4 7.6 14.6 3 14c3-1.4 4.4-3.6 4.9-6.2.3-1.8.8-3.5 1.6-4.6z" fill="currentColor"/></svg>
+            </span>Spicy</button>
+            <button type="button" class="chip-clear" data-menu-clear hidden>Clear all</button>
+          </div>
+        </div>
+      </div>
+      <p class="menu-count" role="status" aria-live="polite" data-menu-count>Showing all 16 dishes</p>
+
+      <div class="menu-board">
+        <section class="menu-section" data-menu-section aria-labelledby="ms-small">
+          <h3 class="menu-section-title" id="ms-small"><span class="ms-num" aria-hidden="true">i.</span>Small plates</h3>
+          <ul class="dish-list">
+            <li class="dish" data-id="beets" data-section="small" data-tags="vegetarian gluten-free" data-price="14">
+              <div class="dish-head"><h4 class="dish-name">Ember-roasted beets</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$14</span></div>
+              <p class="dish-desc">Buried in the coals overnight, whipped feta, burnt honey, pistachio, a little orange zest.</p>
+              <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Gluten-free</li></ul>
+            </li>
+            <li class="dish" data-id="padron" data-section="small" data-tags="vegan gluten-free spicy" data-price="11">
+              <div class="dish-head"><h4 class="dish-name">Blistered padrón peppers</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$11</span></div>
+              <p class="dish-desc">Smoked salt and charred lemon. Most are mild. One in ten will make you sit up.</p>
+              <ul class="tags"><li class="tag">Vegan</li><li class="tag">Gluten-free</li><li class="tag tag-hot">Spicy</li></ul>
+            </li>
+            <li class="dish" data-id="flatbread" data-section="small" data-tags="vegetarian" data-price="9">
+              <div class="dish-head"><h4 class="dish-name">Hearth flatbread</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$9</span></div>
+              <p class="dish-desc">Pulled from the oven floor ninety seconds ago. Cultured butter, za'atar, flaky salt.</p>
+              <ul class="tags"><li class="tag">Vegetarian</li></ul>
+            </li>
+            <li class="dish" data-id="trout" data-section="small" data-tags="" data-price="16">
+              <div class="dish-head"><h4 class="dish-name">Oak-smoked trout rillettes</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$16</span></div>
+              <p class="dish-desc">Steelhead cold-smoked over oak chips, pickled shallot, dill, rye crisps for scooping.</p>
+              <ul class="tags"><li class="tag tag-none">Contains fish</li></ul>
+            </li>
+            <li class="dish" data-id="clams" data-section="small" data-tags="spicy" data-price="19">
+              <div class="dish-head"><h4 class="dish-name">Clams in the coals</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$19</span></div>
+              <p class="dish-desc">Manila clams opened in a cast-iron pan, nduja, white wine, grilled bread for the broth.</p>
+              <ul class="tags"><li class="tag tag-hot">Spicy</li></ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="menu-section" data-menu-section aria-labelledby="ms-fire">
+          <h3 class="menu-section-title" id="ms-fire"><span class="ms-num" aria-hidden="true">ii.</span>From the fire</h3>
+          <ul class="dish-list">
+            <li class="dish" data-id="ribeye" data-section="fire" data-tags="gluten-free" data-price="54">
+              <div class="dish-head"><h4 class="dish-name">Dry-aged ribeye, 14 oz</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$54</span></div>
+              <p class="dish-desc">Forty-five days on the bone, seared hard and rested by the fire. Bone marrow butter, charred onion.</p>
+              <ul class="tags"><li class="tag">Gluten-free</li></ul>
+            </li>
+            <li class="dish" data-id="chicken" data-section="fire" data-tags="gluten-free spicy" data-price="32">
+              <div class="dish-head"><h4 class="dish-name">Brick-pressed half chicken</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$32</span></div>
+              <p class="dish-desc">Brined for a day, cooked skin-down under a hot brick. Calabrian chili oil, grilled lemon.</p>
+              <ul class="tags"><li class="tag">Gluten-free</li><li class="tag tag-hot">Spicy</li></ul>
+            </li>
+            <li class="dish" data-id="branzino" data-section="fire" data-tags="gluten-free" data-price="38">
+              <div class="dish-head"><h4 class="dish-name">Whole branzino</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$38</span></div>
+              <p class="dish-desc">Grilled in a fish basket over the hottest corner of the hearth. Salsa verde, fennel, blistered lemon.</p>
+              <ul class="tags"><li class="tag">Gluten-free</li></ul>
+            </li>
+            <li class="dish" data-id="cauliflower" data-section="fire" data-tags="vegan gluten-free" data-price="26">
+              <div class="dish-head"><h4 class="dish-name">Coal-roasted cauliflower</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$26</span></div>
+              <p class="dish-desc">A whole head roasted right in the embers until the outside goes black. Romesco, almonds, capers.</p>
+              <ul class="tags"><li class="tag">Vegan</li><li class="tag">Gluten-free</li></ul>
+            </li>
+            <li class="dish" data-id="pork" data-section="fire" data-tags="gluten-free" data-price="34">
+              <div class="dish-head"><h4 class="dish-name">Twelve-hour pork shoulder</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$34</span></div>
+              <p class="dish-desc">On the grate since noon. Cider glaze, braised mustard greens, crackling.</p>
+              <ul class="tags"><li class="tag">Gluten-free</li></ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="menu-section" data-menu-section aria-labelledby="ms-sides">
+          <h3 class="menu-section-title" id="ms-sides"><span class="ms-num" aria-hidden="true">iii.</span>Sides</h3>
+          <ul class="dish-list">
+            <li class="dish" data-id="potatoes" data-section="side" data-tags="vegetarian gluten-free" data-price="10">
+              <div class="dish-head"><h4 class="dish-name">Ash-baked potatoes</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$10</span></div>
+              <p class="dish-desc">Fingerlings cooked in the ash bed, smashed, crème fraîche, chives.</p>
+              <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Gluten-free</li></ul>
+            </li>
+            <li class="dish" data-id="beans" data-section="side" data-tags="vegan gluten-free spicy" data-price="9">
+              <div class="dish-head"><h4 class="dish-name">Charred green beans</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$9</span></div>
+              <p class="dish-desc">Blistered in a screaming-hot pan, house chili crisp, toasted garlic.</p>
+              <ul class="tags"><li class="tag">Vegan</li><li class="tag">Gluten-free</li><li class="tag tag-hot">Spicy</li></ul>
+            </li>
+            <li class="dish" data-id="mushrooms" data-section="side" data-tags="vegetarian" data-price="12">
+              <div class="dish-head"><h4 class="dish-name">Wood-fired mushrooms</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$12</span></div>
+              <p class="dish-desc">Chanterelles and maitake from the coast range, miso butter, thyme.</p>
+              <ul class="tags"><li class="tag">Vegetarian</li></ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="menu-section" data-menu-section aria-labelledby="ms-sweet">
+          <h3 class="menu-section-title" id="ms-sweet"><span class="ms-num" aria-hidden="true">iv.</span>Desserts</h3>
+          <ul class="dish-list">
+            <li class="dish" data-id="cheesecake" data-section="sweet" data-tags="vegetarian gluten-free" data-price="12">
+              <div class="dish-head"><h4 class="dish-name">Burnt Basque cheesecake</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$12</span></div>
+              <p class="dish-desc">Baked in the dying oven until the top goes nearly black. Cherries stewed in port.</p>
+              <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Gluten-free</li></ul>
+            </li>
+            <li class="dish" data-id="chocolate" data-section="sweet" data-tags="vegan" data-price="11">
+              <div class="dish-head"><h4 class="dish-name">Smoked chocolate pot</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$11</span></div>
+              <p class="dish-desc">Dark chocolate and coconut cream set over oak smoke, olive oil, sea salt, oat crumble.</p>
+              <ul class="tags"><li class="tag">Vegan</li></ul>
+            </li>
+            <li class="dish" data-id="peaches" data-section="sweet" data-tags="vegetarian" data-price="11">
+              <div class="dish-head"><h4 class="dish-name">Grilled peaches</h4><span class="dish-leader" aria-hidden="true"></span><span class="dish-price">$11</span></div>
+              <p class="dish-desc">Caramelized cut-side down, bay leaf ice cream, brown butter crumble.</p>
+              <ul class="tags"><li class="tag">Vegetarian</li></ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="menu-empty" data-menu-empty hidden>
+        <svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true" focusable="false"><path d="M32 8c3 7 11 12 11 22a11 11 0 0 1-22 0c0-5 2-8 4.5-10.3.4 3.4 1.8 5.8 4.2 6.8C28 19 29 14 32 8z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 52h32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <p class="menu-empty-title">Nothing on tonight's menu matches that.</p>
+        <p>Try a different word or loosen a filter. The kitchen can often adapt a dish, so ask your server.</p>
+        <button type="button" class="btn btn-ghost" data-menu-clear>Show the whole menu</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tasting" id="tasting" aria-labelledby="tasting-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal><span class="eyebrow-num">03</span>Build a tasting menu</p>
+        <h2 class="section-title" id="tasting-title" data-reveal>Four courses, <em>your call.</em></h2>
+        <p class="section-intro" data-reveal>Pick one plate for each course and we will pace them out of the kitchen for the whole table. Hollis, our wine director, suggests a pour for each.</p>
+      </div>
+      <div class="tasting-grid">
+        <div class="courses" data-tasting role="group" aria-label="Tasting menu courses">
+          <fieldset class="course" data-course="small">
+            <legend><span class="course-num">Course 1</span><span class="course-name">To start</span></legend>
+            <div class="course-options" data-options></div>
+          </fieldset>
+          <fieldset class="course" data-course="fire">
+            <legend><span class="course-num">Course 2</span><span class="course-name">From the fire</span></legend>
+            <div class="course-options" data-options></div>
+          </fieldset>
+          <fieldset class="course" data-course="side">
+            <legend><span class="course-num">Course 3</span><span class="course-name">Alongside</span></legend>
+            <div class="course-options" data-options></div>
+          </fieldset>
+          <fieldset class="course" data-course="sweet">
+            <legend><span class="course-num">Course 4</span><span class="course-name">To finish</span></legend>
+            <div class="course-options" data-options></div>
+          </fieldset>
+        </div>
+
+        <aside class="summary" aria-labelledby="summary-title">
+          <div class="summary-card">
+            <h3 class="summary-title" id="summary-title">Your table</h3>
+            <ol class="picks" data-picks>
+              <li data-pick="small"><span class="pick-course">To start</span><span class="pick-name">Not chosen yet</span></li>
+              <li data-pick="fire"><span class="pick-course">From the fire</span><span class="pick-name">Not chosen yet</span></li>
+              <li data-pick="side"><span class="pick-course">Alongside</span><span class="pick-name">Not chosen yet</span></li>
+              <li data-pick="sweet"><span class="pick-course">To finish</span><span class="pick-name">Not chosen yet</span></li>
+            </ol>
+
+            <div class="pairing" data-pairing>
+              <p class="pairing-label">Suggested pairing</p>
+              <p class="pairing-name" data-pairing-name aria-live="polite">Choose something from the fire</p>
+              <p class="pairing-note" data-pairing-note>The main course sets the direction. Hollis builds the other pours around it.</p>
+              <ol class="pours" data-pours></ol>
+            </div>
+            <label class="pair-add">
+              <input type="checkbox" data-pairing-add>
+              <span>Add the pairing: three pours, $38 per guest</span>
+            </label>
+
+            <div class="party">
+              <span class="party-label" id="party-label">Guests</span>
+              <div class="stepper" role="group" aria-labelledby="party-label">
+                <button type="button" class="step" data-step="-1" aria-label="Remove a guest">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <output class="step-value" data-party aria-live="polite">2</output>
+                <button type="button" class="step" data-step="1" aria-label="Add a guest">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M6 12h12M12 6v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <dl class="totals">
+              <div><dt>Per guest</dt><dd data-per-person>$0</dd></div>
+              <div class="total-table"><dt>For the table</dt><dd data-table-total>$0</dd></div>
+            </dl>
+            <p class="sr-only" role="status" data-tasting-status></p>
+            <p class="fine">Before tax and a 20% service charge that is shared by the whole team.</p>
+            <a class="btn btn-accent btn-block" href="#reserve" data-book-tasting>Reserve this menu</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="section-head section-head-split">
+        <div>
+          <p class="eyebrow" data-reveal><span class="eyebrow-num">04</span>Around the room</p>
+          <h2 class="section-title" id="gallery-title" data-reveal>Smoke, salt <em>and a long pour.</em></h2>
+        </div>
+        <p class="section-intro" data-reveal>A few scenes from a Friday night. Open any of them for a closer look, and use the arrow keys to move through the set.</p>
+      </div>
+      <ul class="gallery-grid" data-gallery>
+        <li class="g-item g-1">
+          <button type="button" class="tile" data-index="0" data-title="The hearth at six" data-desc="Oak catches fast. By the first seating the bed of coals is glowing and the grate is ready.">
+            <svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#art-hearth"/></svg>
+            <span class="tile-cap"><span class="tile-num" aria-hidden="true">01</span>The hearth at six</span>
+          </button>
+        </li>
+        <li class="g-item g-2">
+          <button type="button" class="tile" data-index="1" data-title="Ribeye, resting" data-desc="Forty-five days of dry aging, eight minutes over the fire, ten more resting on the board.">
+            <svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#art-ribeye"/></svg>
+            <span class="tile-cap"><span class="tile-num" aria-hidden="true">02</span>Ribeye, resting</span>
+          </button>
+        </li>
+        <li class="g-item g-3">
+          <button type="button" class="tile" data-index="2" data-title="A heavy pour" data-desc="Syrah from the Walla Walla Valley, poured at the bar under the copper lamps.">
+            <svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#art-pour"/></svg>
+            <span class="tile-cap"><span class="tile-num" aria-hidden="true">03</span>A heavy pour</span>
+          </button>
+        </li>
+        <li class="g-item g-4">
+          <button type="button" class="tile" data-index="3" data-title="Beets from the ash" data-desc="Red and golden beets, roasted overnight in the embers and peeled warm.">
+            <svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#art-beets"/></svg>
+            <span class="tile-cap"><span class="tile-num" aria-hidden="true">04</span>Beets from the ash</span>
+          </button>
+        </li>
+        <li class="g-item g-5">
+          <button type="button" class="tile" data-index="4" data-title="The coal bed" data-desc="Every hour a cook rakes fresh coals under the grate. It is the most important job in the kitchen.">
+            <svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#art-coals"/></svg>
+            <span class="tile-cap"><span class="tile-num" aria-hidden="true">05</span>The coal bed</span>
+          </button>
+        </li>
+        <li class="g-item g-6">
+          <button type="button" class="tile" data-index="5" data-title="Last table" data-desc="Table nine, half past ten, one candle left and the rest of the bottle.">
+            <svg class="art" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="#art-candle"/></svg>
+            <span class="tile-cap"><span class="tile-num" aria-hidden="true">06</span>Last table</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section press" aria-labelledby="press-title">
+    <div class="container">
+      <h2 class="eyebrow press-eyebrow" id="press-title"><span class="eyebrow-num">05</span>Kind words</h2>
+      <figure class="press-feature" data-reveal>
+        <blockquote>
+          <p>“The smoked chocolate pot might be the best eleven dollars you spend in this city all year.”</p>
+        </blockquote>
+        <figcaption>City Table Magazine</figcaption>
+      </figure>
+      <ul class="press-list">
+        <li data-reveal>
+          <figure>
+            <blockquote><p>“A room that smells like a campfire in the best way, and a wine list that knows exactly what it is doing.”</p></blockquote>
+            <figcaption>The Weekly Fork</figcaption>
+          </figure>
+        </li>
+        <li data-reveal class="d1">
+          <figure>
+            <blockquote><p>“Order the beets even if you think you do not like beets. Especially then.”</p></blockquote>
+            <figcaption>Northwest Supper Review</figcaption>
+          </figure>
+        </li>
+        <li data-reveal class="d2">
+          <figure>
+            <blockquote><p>“Arana cooks like someone who has spent years listening to a fire.”</p></blockquote>
+            <figcaption>Local Plates Guide</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section events" id="events" aria-labelledby="events-title">
+    <div class="container events-grid">
+      <div class="events-copy">
+        <p class="eyebrow" data-reveal><span class="eyebrow-num">06</span>Private events</p>
+        <h2 class="section-title" id="events-title" data-reveal>The Cellar Room <em>seats twenty-four.</em></h2>
+        <p class="section-intro" data-reveal>Downstairs, under the old forge, one long oak table runs the length of a brick room lined with our reserve bottles. Rehearsal dinners, team suppers, the birthday you have been meaning to do properly.</p>
+        <ul class="event-list" data-reveal>
+          <li><strong>Seated dinners for 10 to 24</strong> at one table, family style or plated.</li>
+          <li><strong>Set menus from $85 per guest</strong>, with pairings from Hollis on request.</li>
+          <li><strong>Whole-animal roasts</strong> on the hearth with a week of notice.</li>
+          <li><strong>Full buyouts</strong> for up to 90 standing, Sunday through Thursday.</li>
+        </ul>
+        <div class="events-cta" data-reveal>
+          <a class="btn btn-accent" href="mailto:events@emberandoak.example?subject=Cellar%20Room%20inquiry">Ask about a date</a>
+          <a class="btn btn-ghost" href="tel:+15035550142">Call&nbsp;(503)&nbsp;555&#8209;0142</a>
+        </div>
+      </div>
+      <div class="events-art" aria-hidden="true">
+        <svg viewBox="0 0 520 560" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="ev-table" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6b4026"/><stop offset=".5" stop-color="#8a5634"/><stop offset="1" stop-color="#5a3420"/></linearGradient>
+            <radialGradient id="ev-glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffb35c" stop-opacity=".85"/><stop offset=".35" stop-color="#ff7a2a" stop-opacity=".25"/><stop offset="1" stop-color="#ff7a2a" stop-opacity="0"/></radialGradient>
+          </defs>
+          <rect class="ev-floor" x="0" y="0" width="520" height="560" rx="28"/>
+          <g class="ev-bricks">
+            <path d="M0 70h520M0 140h520M0 210h520M0 280h520M0 350h520M0 420h520M0 490h520"/>
+          </g>
+          <g class="ev-chairs">
+            <rect x="140" y="62" width="34" height="40" rx="10"/><rect x="140" y="134" width="34" height="40" rx="10"/><rect x="140" y="206" width="34" height="40" rx="10"/><rect x="140" y="278" width="34" height="40" rx="10"/><rect x="140" y="350" width="34" height="40" rx="10"/><rect x="140" y="422" width="34" height="40" rx="10"/>
+            <rect x="346" y="62" width="34" height="40" rx="10"/><rect x="346" y="134" width="34" height="40" rx="10"/><rect x="346" y="206" width="34" height="40" rx="10"/><rect x="346" y="278" width="34" height="40" rx="10"/><rect x="346" y="350" width="34" height="40" rx="10"/><rect x="346" y="422" width="34" height="40" rx="10"/>
+          </g>
+          <rect x="180" y="40" width="160" height="450" rx="16" fill="url(#ev-table)"/>
+          <path d="M196 60v410M226 50v430M262 48v434M298 50v430M326 60v410" stroke="#3c2214" stroke-opacity=".35" stroke-width="2"/>
+          <g class="ev-plates">
+            <circle cx="208" cy="82" r="20"/><circle cx="208" cy="154" r="20"/><circle cx="208" cy="226" r="20"/><circle cx="208" cy="298" r="20"/><circle cx="208" cy="370" r="20"/><circle cx="208" cy="442" r="20"/>
+            <circle cx="312" cy="82" r="20"/><circle cx="312" cy="154" r="20"/><circle cx="312" cy="226" r="20"/><circle cx="312" cy="298" r="20"/><circle cx="312" cy="370" r="20"/><circle cx="312" cy="442" r="20"/>
+          </g>
+          <g fill="url(#ev-glow)"><circle cx="260" cy="118" r="54"/><circle cx="260" cy="262" r="54"/><circle cx="260" cy="406" r="54"/></g>
+          <g fill="#fff3dc"><circle cx="260" cy="118" r="6"/><circle cx="260" cy="262" r="6"/><circle cx="260" cy="406" r="6"/></g>
+          <g fill="none" stroke="#f3dcc0" stroke-opacity=".7" stroke-width="2"><circle cx="236" cy="66" r="7"/><circle cx="284" cy="138" r="7"/><circle cx="236" cy="210" r="7"/><circle cx="284" cy="282" r="7"/><circle cx="236" cy="354" r="7"/><circle cx="284" cy="426" r="7"/></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reserve" id="reserve" aria-labelledby="reserve-title">
+    <div class="container reserve-grid">
+      <div class="reserve-copy">
+        <p class="eyebrow" data-reveal><span class="eyebrow-num">07</span>Reservations</p>
+        <h2 class="section-title" id="reserve-title" data-reveal>Save a seat <em>by the fire.</em></h2>
+        <p class="section-intro" data-reveal>We book the dining room up to sixty days out. The eight seats at the hearth counter are kept for walk-ins, first come, first served.</p>
+        <div class="reserve-status" data-reveal>
+          <span class="status" data-open-status><span class="status-dot" aria-hidden="true"></span><span data-status-text>Tue to Sun from 5 pm</span></span>
+        </div>
+        <ul class="reserve-notes" data-reveal>
+          <li>We hold tables for fifteen minutes past the booking time.</li>
+          <li>For parties of 8 or more we call to confirm and talk through the menu.</li>
+          <li>Need to cancel? A call or email the day before is all we ask.</li>
+        </ul>
+      </div>
+
+      <form class="res-form" data-reserve novalidate aria-labelledby="res-form-title">
+        <h3 class="res-form-title" id="res-form-title">Request a table</h3>
+        <div class="field-row">
+          <div class="field">
+            <label for="res-date">Date</label>
+            <input type="date" id="res-date" name="date" required aria-describedby="res-date-hint res-date-err">
+            <p class="hint" id="res-date-hint">Tuesday to Sunday, up to 60 days out.</p>
+            <p class="field-error" id="res-date-err"></p>
+          </div>
+          <div class="field">
+            <label for="res-party">Guests</label>
+            <select id="res-party" name="party" aria-describedby="res-party-note">
+              <option value="1">1 guest</option>
+              <option value="2" selected>2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+              <option value="7">7 guests</option>
+              <option value="8">8 guests</option>
+              <option value="9">9 guests</option>
+              <option value="10">10 guests</option>
+              <option value="11">11 guests</option>
+              <option value="12">12 guests</option>
+            </select>
+            <div aria-live="polite"><p class="note" id="res-party-note" data-large-party hidden>For 8 or more, we'll call within a day to confirm and talk through a set menu.</p></div>
+          </div>
+        </div>
+
+        <fieldset class="field slots-field" aria-describedby="res-time-err">
+          <legend>Time</legend>
+          <p class="slots-status" data-slots-status aria-live="polite">Pick a date to see open times.</p>
+          <div class="slots" data-slots></div>
+          <p class="field-error" id="res-time-err"></p>
+        </fieldset>
+
+        <div class="field">
+          <label for="res-name">Name</label>
+          <input type="text" id="res-name" name="name" autocomplete="name" required aria-describedby="res-name-err">
+          <p class="field-error" id="res-name-err"></p>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="res-email">Email</label>
+            <input type="email" id="res-email" name="email" autocomplete="email" inputmode="email" required aria-describedby="res-email-err">
+            <p class="field-error" id="res-email-err"></p>
+          </div>
+          <div class="field">
+            <label for="res-phone">Phone</label>
+            <input type="tel" id="res-phone" name="phone" autocomplete="tel" inputmode="tel" required aria-describedby="res-phone-hint res-phone-err">
+            <p class="hint" id="res-phone-hint">In case we need to reach you on the day.</p>
+            <p class="field-error" id="res-phone-err"></p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="res-notes">Anything we should know? <span class="optional">(optional)</span></label>
+          <textarea id="res-notes" name="notes" rows="3" placeholder="Allergies, a birthday, a seat by the hearth"></textarea>
+        </div>
+        <div class="form-foot">
+          <button type="submit" class="btn btn-accent btn-lg">Request this table</button>
+          <p class="form-demo">Demo form. Nothing is sent anywhere.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section visit" id="visit" aria-labelledby="visit-title">
+    <div class="container visit-grid">
+      <div class="map-wrap" data-reveal>
+        <svg class="map" viewBox="0 0 640 520" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="map-title">
+          <title id="map-title">Map: Ember &amp; Oak at 418 Cinder Lane, on the corner of Foundry Street, one block from Foundry Park and Larch Creek</title>
+          <rect class="map-land" width="640" height="520"/>
+          <path class="map-water" d="M-20 410c90-30 150 10 230-10s120-80 220-70 160 50 230 30v190H-20z"/>
+          <path class="map-park" d="M420 60h150a14 14 0 0 1 14 14v116a14 14 0 0 1-14 14H420a14 14 0 0 1-14-14V74a14 14 0 0 1 14-14z"/>
+          <g class="map-blocks">
+            <rect x="40" y="40" width="150" height="100" rx="8"/><rect x="230" y="40" width="140" height="100" rx="8"/>
+            <rect x="40" y="180" width="150" height="110" rx="8"/><rect x="230" y="180" width="140" height="110" rx="8"/>
+            <rect x="406" y="244" width="178" height="80" rx="8"/><rect x="40" y="330" width="150" height="40" rx="8"/><rect x="230" y="330" width="140" height="30" rx="8"/>
+          </g>
+          <g class="map-road-minor"><path d="M0 160h640M210 0v390M388 0v370M0 310h640"/></g>
+          <g class="map-road"><path d="M0 225h640"/><path d="M600 0v520"/></g>
+          <path class="map-route" d="M600 470V225H312"/>
+          <g class="map-label">
+            <text x="24" y="216">CINDER LN</text>
+            <text x="24" y="152">FOUNDRY ST</text>
+            <text x="216" y="20" transform="rotate(90 216 20)">SE 9TH AVE</text>
+            <text x="440" y="138">FOUNDRY PARK</text>
+            <text x="60" y="470" class="map-label-water">LARCH CREEK</text>
+          </g>
+          <g class="map-bus"><circle cx="600" cy="470" r="13"/><text x="600" y="475" text-anchor="middle">14</text></g>
+          <g class="map-pin" transform="translate(300 225)">
+            <circle class="pin-pulse" r="30"/>
+            <circle class="pin-ring" r="15"/>
+            <circle class="pin-dot" r="7"/>
+          </g>
+          <g class="map-tag" transform="translate(228 248)">
+            <rect width="148" height="40" rx="10"/>
+            <text x="74" y="25" text-anchor="middle">Ember &amp; Oak</text>
+          </g>
+          <g class="map-compass" transform="translate(600 40)"><circle r="18"/><path d="M0-11l5 13H-5z"/><text y="14" text-anchor="middle">N</text></g>
+        </svg>
+      </div>
+      <div class="visit-copy">
+        <p class="eyebrow" data-reveal><span class="eyebrow-num">08</span>Visit</p>
+        <h2 class="section-title" id="visit-title" data-reveal>Follow the <em>smoke.</em></h2>
+        <address class="visit-address" data-reveal>
+          418 Cinder Lane<br>Portland, OR 97214<br>
+          <a href="tel:+15035550142">(503)&nbsp;555&#8209;0142</a><br>
+          <a href="mailto:hello@emberandoak.example">hello@emberandoak.example</a>
+        </address>
+        <div class="hours" data-reveal>
+          <div class="hours-head">
+            <h3 class="hours-title">Hours</h3>
+            <span class="status" data-open-status><span class="status-dot" aria-hidden="true"></span><span data-status-text>Tue to Sun from 5 pm</span></span>
+          </div>
+          <table class="hours-table" data-hours-table>
+            <caption class="sr-only">Opening hours, Pacific time</caption>
+            <tbody>
+              <tr data-dow="2"><th scope="row">Tuesday</th><td>5 to 10 pm</td></tr>
+              <tr data-dow="3"><th scope="row">Wednesday</th><td>5 to 10 pm</td></tr>
+              <tr data-dow="4"><th scope="row">Thursday</th><td>5 to 10 pm</td></tr>
+              <tr data-dow="5"><th scope="row">Friday</th><td>5 to 11 pm</td></tr>
+              <tr data-dow="6"><th scope="row">Saturday</th><td>5 to 11 pm</td></tr>
+              <tr data-dow="0"><th scope="row">Sunday</th><td>4 to 9 pm</td></tr>
+              <tr data-dow="1"><th scope="row">Monday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="getting-here" data-reveal>
+          <li><strong>Bus</strong> Line 14 stops at Foundry and 9th, two minutes away.</li>
+          <li><strong>Bike</strong> There is a corral right out front.</li>
+          <li><strong>Car</strong> Street parking is free after 6 pm on Cinder Lane.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-mark" aria-hidden="true">Ember <i>&amp;</i> Oak</p>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-head">Ember &amp; Oak</p>
+        <p class="footer-text">Wood-fired kitchen and wine bar. Everything we cook touches the fire.</p>
+      </div>
+      <div>
+        <p class="footer-head">Find us</p>
+        <p class="footer-text">418 Cinder Lane<br>Portland, OR 97214<br><a href="tel:+15035550142">(503)&nbsp;555&#8209;0142</a></p>
+      </div>
+      <div>
+        <p class="footer-head">Hours</p>
+        <p class="footer-text">Tue to Thu, 5 to 10 pm<br>Fri and Sat, 5 to 11 pm<br>Sun, 4 to 9 pm. Closed Mon.</p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="footer-head">On this page</p>
+        <ul class="footer-links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reserve">Reservations</a></li>
+          <li><a href="#events">Private events</a></li>
+          <li><a href="#top">Back to top</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-base">
+      <p>&copy; <span data-year></span> Ember &amp; Oak. A fictional restaurant.</p>
+      <p class="pt-credit">Concept site by <a href="https://puretechteam.github.io/">Pure Tech</a></p>
+    </div>
+  </div>
+</footer>
+
+<dialog class="lightbox" data-lightbox aria-labelledby="lb-title">
+  <div class="lb-frame">
+    <div class="lb-art" data-lb-art></div>
+    <div class="lb-meta">
+      <p class="lb-count" data-lb-count>1 of 6</p>
+      <h2 class="lb-title" id="lb-title" data-lb-title>The hearth at six</h2>
+      <p class="lb-desc" data-lb-desc></p>
+      <div class="lb-nav">
+        <button type="button" class="lb-btn" data-lb-prev aria-label="Previous image">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="lb-btn" data-lb-next aria-label="Next image">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <button type="button" class="lb-close" data-lb-close aria-label="Close">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</dialog>
+
+<dialog class="confirm" data-confirm aria-labelledby="confirm-title">
+  <div class="confirm-inner">
+    <p class="confirm-kicker">Demo booking</p>
+    <h2 class="confirm-title" id="confirm-title">Your table is pencilled in</h2>
+    <dl class="confirm-list" data-confirm-list></dl>
+    <p class="confirm-note"><strong>This is a demo.</strong> No reservation was made and nothing was sent. Ember &amp; Oak is a fictional restaurant.</p>
+    <form method="dialog" class="confirm-actions">
+      <button type="submit" class="btn btn-accent">Done</button>
+    </form>
+  </div>
+</dialog>
+
+<div class="demo-ribbon" role="note"><span>Demo site. A concept by <a href="https://puretechteam.github.io/">Pure Tech</a>. Not a real business.</span><button type="button" aria-label="Dismiss demo notice">&times;</button></div>
+</body>
+</html>

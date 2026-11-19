@@ -1,0 +1,19 @@
+# dependencies and tooling output
+node_modules/
+test-results/
+playwright-report/
+.lighthouse/
+*.log
+.cache/
+
+# secrets
+.env*
+!.env.example
+*.key
+*.pem
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
