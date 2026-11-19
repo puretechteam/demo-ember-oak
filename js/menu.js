@@ -161,7 +161,7 @@ export function initTasting() {
         <span class="opt-body">
           <span class="opt-top"><span class="opt-name">${d.name}</span><span class="opt-check">${checkSvg}</span></span>
           <span class="opt-price">${money(d.price)}</span>
-          <span class="opt-tags">${d.tags.map((t) => TAG_LABEL[t]).join(' · ') || '&nbsp;'}</span>
+          <span class="opt-tags">${d.tags.map((t) => `<span>${TAG_LABEL[t]}</span>`).join(' · ') || '&nbsp;'}</span>
         </span>
       </label>`).join('');
   });

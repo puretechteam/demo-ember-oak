@@ -17,8 +17,16 @@ for (const path of PAGES) {
 
     test('no horizontal scroll', async ({ page }) => {
       await page.goto(path, { waitUntil: 'networkidle' });
-      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+      // clientWidth, not innerWidth: on mobile emulation innerWidth grows to fit overflowing content.
+      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
       expect(overflow).toBeLessThanOrEqual(0);
+      const offscreen = await page.evaluate(() => {
+        const vw = document.documentElement.clientWidth;
+        return [...document.querySelectorAll('header a, header button')]
+          .filter((e) => { const r = e.getBoundingClientRect(); return r.width > 0 && (r.right > vw + 0.5 || r.left < -0.5); })
+          .map((e) => (e.getAttribute('aria-label') || e.textContent).trim().slice(0, 24));
+      });
+      expect(offscreen).toEqual([]);
     });
 
     for (const theme of ['light', 'dark']) {
@@ -33,6 +41,25 @@ for (const path of PAGES) {
     }
   });
 }
+
+test('fits common phone widths: no overflow, header controls on screen', async ({ page }, info) => {
+  test.skip(info.project.name !== 'mobile', 'phone widths only');
+  for (const width of [320, 360, 375, 390]) {
+    await page.setViewportSize({ width, height: 800 });
+    await page.goto('/', { waitUntil: 'networkidle' });
+    await page.evaluate(() => document.fonts.ready);
+    const r = await page.evaluate(() => {
+      const vw = document.documentElement.clientWidth;
+      return {
+        overflow: document.documentElement.scrollWidth - vw,
+        offscreen: [...document.querySelectorAll('header a, header button')]
+          .filter((e) => { const b = e.getBoundingClientRect(); return b.width > 0 && (b.right > vw + 0.5 || b.left < -0.5); })
+          .map((e) => (e.getAttribute('aria-label') || e.textContent).trim().slice(0, 24)),
+      };
+    });
+    expect(r, `at ${width}px`).toEqual({ overflow: 0, offscreen: [] });
+  }
+});
 
 test('has title, description, canonical, og tags, JSON-LD', async ({ page }) => {
   await page.goto('/');
